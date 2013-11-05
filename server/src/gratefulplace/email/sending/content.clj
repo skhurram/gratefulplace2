@@ -1,8 +1,7 @@
 (ns gratefulplace.email.sending.content
   (:require [clojure.java.io :as io]
             [stencil.core :as stencil]
-            [gratefulplace.utils :refer :all])
-  (:import org.apache.commons.mail.HtmlEmail))
+            [gratefulplace.utils :refer :all]))
 
 (def template-directory "email-templates/")
 

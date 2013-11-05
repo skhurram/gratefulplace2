@@ -4,7 +4,6 @@
             [postal.core :as email]
             [clojure.java.io :as io]
             [clojure.string :as s]
-            [stencil.core :as stencil]
             [gratefulplace.utils :refer :all]
             [gratefulplace.email.sending.content :refer [body]])
   (:import org.apache.commons.mail.HtmlEmail))
