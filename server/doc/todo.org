@@ -1,0 +1,18 @@
+* Map rules
+Does it make sense to have all these transformations here?
+[[file:~/projects/web_sites/gp2/server/src/gratefulplace/db/maprules.clj::(ns%20gratefulplace.db.maprules][map rules]]
+
+* How to handle "after-create"? Separation of transaction functions?
+[[file:~/projects/web_sites/gp2/server/src/gratefulplace/db/transactions/posts.clj::(ns%20gratefulplace.db.transactions.posts][post transactions]]
+
+* Query functions not powerful enough
+Have to use datomic/q function
+[[file:~/projects/web_sites/gp2/server/src/gratefulplace/controllers/watches.clj::(map%20(comp%20record%20first)][watches controller]]
+
+* Thread of interdependencies
+bunch of interrelated functions, should it be more obvious?
+- [[file:~/projects/web_sites/gp2/server/src/gratefulplace/controllers/posts.clj:::post!%20(create-content%20tx/create-post%20params%20auth%20record)][posts controller create]]
+- [[file:~/projects/web_sites/gp2/server/src/gratefulplace/controllers/shared.clj::(defn%20create-content][create-content, shared]]
+- [[file:~/projects/web_sites/gp2/server/src/gratefulplace/db/mapification.clj::(defn%20mapify-tx-result][mapifications]]
+
+* 
