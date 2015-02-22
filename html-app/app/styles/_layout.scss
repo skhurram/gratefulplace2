@@ -8,6 +8,11 @@ $L: 75em;
   @include container;
   @include trailer;
   @include leader;
+  position: relative;
+}
+
+#search-results .posts, #topics {
+  position: relative;
 }
 
 nav.primary, .fancy {
@@ -178,6 +183,10 @@ footer {
   .comments, .unread-count {
     float:right;
     margin-right:.5em;
+  }
+
+  .unread-count {
+    color: $dark-green;
   }
   
   .like {
